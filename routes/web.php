@@ -22,3 +22,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+
+Route::get('/movie', 'Movie\MovieController@movie');
+Route::get('/domovie/{k}', 'Movie\MovieController@doMovie');
